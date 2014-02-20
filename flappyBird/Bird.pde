@@ -1,17 +1,16 @@
-class Bird
+class Bird 
 {
   float mass = 90.8;  
   PVector gravity = new PVector(0 , 90.8);
   PVector velocity = new PVector (0, 0);
   PVector position = new PVector (width/2-100, height/2-100);
-  PVector force = new PVector (0, mass*-gravity.y);
+  PVector force = new PVector (0, mass * -gravity.y);
   boolean buttonReset = true, flap = false;
-  float theta = 0.2f;
-  
   float timeDelta = 1.0f / 60.0f;
+  boolean delete = false;
   
   void draw()
-  {
+  { 
     stroke(0);
     //beak
     line(165, position.y, 154, position.y+9);
@@ -56,7 +55,7 @@ class Bird
   {
      if (position.y < 2)
      {
-       position.y = 15        ;
+       position.y = 15;
      } 
      if (position.y > 500)
      {
