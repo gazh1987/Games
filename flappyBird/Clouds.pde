@@ -1,7 +1,7 @@
 class Clouds
 {
   PVector position = new PVector(random(width+200), random(height));
-  PVector velocity = new PVector(-1, 0);
+  PVector velocity = new PVector(-0.5, 0);
   
   Clouds()
   {

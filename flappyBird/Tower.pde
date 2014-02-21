@@ -35,7 +35,6 @@ class Tower
     fill(#b2b7be);
     rect (position.x, position.y, 60, h);
     rect (position.x, h + 80, 60, 500 - h -10);
-    println(500 - (h + 80));
   }
   
   void update()

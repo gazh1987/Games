@@ -1,12 +1,12 @@
 class Bird 
 {
-  float mass = 90.8;  
+  float mass = 70.8;  
+  float timeDelta = 1.0f / 60.0f;
   PVector gravity = new PVector(0 , 90.8);
   PVector velocity = new PVector (0, 0);
   PVector position = new PVector (width/2-100, height/2-100);
   PVector force = new PVector (0, mass * -gravity.y);
   boolean buttonReset = true, flap = false;
-  float timeDelta = 1.0f / 60.0f;
   boolean delete = false;
   
   void draw()
