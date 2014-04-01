@@ -13,3 +13,9 @@ marsRoverGame
 =============
    - version 1: Original game. Top-down-scroller made in the processing language. 
    - version 1.1: Turning lag fixed. Rover now moves from left to right smoothly.
+
+====================
+Conways game of life
+====================
+   - Simulation of "Conways game of life" implemented in Processing 
+   - http://www.youtube.com/watch?v=CgOcEZinQ2I 
