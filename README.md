@@ -12,3 +12,4 @@ flappyBird
 marsRoverGame
 =============
    - version 1: Original game. Top-down-scroller made in the processing language. 
+   - version 1.1: Turning lag fixed. Rover now moves from left to right smoothly.
