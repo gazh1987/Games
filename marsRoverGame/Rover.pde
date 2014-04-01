@@ -60,6 +60,7 @@ class Rover
     {
       if(key == 'd' | key == 'D' | keyCode == RIGHT)
       {
+        rover.x += 4;
         pushMatrix();
         translate(x+36, 404);
         rotate(thetaR);
@@ -68,6 +69,7 @@ class Rover
       }
       if(key == 'a' | key == 'A' | keyCode == LEFT)
       {
+        rover.x -= 4;
         pushMatrix();
         translate(x+36, 404);
         rotate(thetaL);

@@ -16,7 +16,6 @@ void setup()
   background(#f98746);
   
   minim = new Minim(this);
-  theme = minim.loadFile("marsRoverTheme.wav");
   collect = minim.loadFile("collect.wav");
 
   f = createFont( "lilyUPC",16,true);
@@ -27,7 +26,6 @@ void setup()
   background = new Background(80);
   rover = new Rover();
   endgame = new endGame();
-  theme.play();
 
   //Adding Ufo and Rock objects to a list of gameObects (Polymorphism!) 
   for (int i = 0; i < 5; i ++)
@@ -92,14 +90,6 @@ void draw()
 
 void keyPressed()
 {
-  if (key == 'd' | key == 'D' | keyCode == RIGHT)
-  {
-    rover.rightTurn();
-  }
-  if (key == 'a' | key == 'A' | keyCode == LEFT)
-  {
-    rover.leftTurn();
-  }
   if (key == 's' | key == 'S') 
   {
     main.game = true;
